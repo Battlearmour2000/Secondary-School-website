@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="w th=device-w th, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="header">
+        <img src="Images/Logo1.png" alt="logo" class="logo">
+        <h1 class="title">Feza Boys' Secondary School</h1>
+        <div class="links">
+        <a href="Landing.html" target="_self">Home</a>
+        <a href="about.html" target="_self">About</a>
+        <a href="register.html" target="_self">Register</a>
+        <a href="login.html" target="_self">Alumni</a>
+        <a href="staff.html" target="_self">Staff</a>
+        <a href="contacts.html" target="_self">Contacts</a>
+        </div>
+</div>
+    
+<form action="register2.php" method="POST" enctype="multipart/form-data">
+    <div class="register" >
+        <div class="register_card ">
+            <label class="label">First Name</label>
+            <input type="text" class="input1" placeholder="First Name"
+             name="fname" required><br>
+
+            <label class="label">Middle Name</label>
+            <input type="text" class="input1" placeholder="Middle Name"
+             name="mname"required><br>
+
+            <label class="label">Last Name</label>
+            <input type="text" class="input1" placeholder="Last Name"
+             name="lname" required><br>
+
+            <label class="label">Username</label>
+            <input type="text" class="input1" placeholder="Username"
+             name="username" required><br>
+            
+            <label class="label">Date of Birth</label>
+            <input type="date" class="input1" name="dob" required><br>
+
+            <label class="label">Password</label>
+            <input type="password" class="input1" placeholder="Password"
+             name="password" pattern="[A-Za-z\d@$!%*#?&]{8,}$" required><br>
+
+            <label class="label">C.V</label>
+            <input type="file" class="input1" name="cv"><br>
+
+            <label class="label">Social media type</label>
+            <select class="input1" name="social_type">
+                <option>Instagram</option>
+                <option>Facebook</option>
+                <option>Snapchat</option>
+                <option>Twitter</option>
+                <option>Reddit</option>
+            </select><br>
+            <!-- <input type="text" class="input1" placeholder="account type" 
+            name="social_type" required><br> -->
+
+            <label class="label">Social Handle</label>
+            <input type="text" class="input1" placeholder="username" 
+            name="social_handle" required><br>
+
+            <label class="label">Email</label>
+            <input type="email" class="input1" placeholder="Email" 
+            name="email" required><br>
+
+            <label class="label">Mobile Number</label>
+            <input type="tel" class="input1" placeholder="Phone number"
+            pattern="[0-9]{3}-[0-9]{9}" name="number" required><br>
+
+            <input type="submit" class="input1" value="Upload"><br>
+        </div>
+    </div>
+</form>
+    
+</body>
+</html>

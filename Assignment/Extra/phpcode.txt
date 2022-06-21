@@ -1,0 +1,14 @@
+INSERT INTO userinfo (fname, mname, lname, dob, pasword, cv, contacts)
+	VALUES ('Tony', 'Howard', 'Stark', '20/06/1984', 'WARMACHINEROX', '1', 'Malibu,CA');
+
+
+
+CREATE TABLE userinfo (
+	fname varchar(128) not null,
+	mname varchar(128) not null,
+	lname varchar(128) not null,
+	dob varchar(128) not null,
+	pasword varchar(128) not null,
+	cv varchar(128) not null,
+	contacts varchar(128) not null
+);

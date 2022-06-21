@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Images/Logo1.png" alt="logo" class="logo">
+        <h1 class="title">Feza Boys' Secondary School</h1>
+        <div class="links">
+        <a href="Landing.html" target="_self">Home</a>
+        <a href="about.html" target="_self">About</a>
+        <a href="register.html" target="_self">Register</a>
+        <a href="Alumni.html" target="_self">Alumni</a>
+        <a href="staff.html" target="_self">Staff</a>
+        <a href="contacts.html" target="_self">Contacts</a>
+        </div>
+    </div>
+
+<form action="alumnus.php" method="POST">
+    <div class="register">
+        <div class="alumni_card ">
+            <label class="label">Alumnus Name</label>
+            <input type="text" class="input1" placeholder="Alumnus Name"
+             name="aname" maxlength="30" required><br>
+
+            <label class="label">Year of Enrollment</label>
+            <input type="year" class="input1" name="yoe" placeholder="Enter Year" required><br>
+
+            <label class="label">Year of Graduation</label>
+            <input type="year" class="input1" placeholder="Enter Year" name="yog" required><br>
+
+            <label class="label">Current Occupation</label>
+            <input type="text" class="input1" placeholder="Current Occupation"
+            maxlength="20" name="occupation" required><br>
+
+            <label class="label">Principal at time of Enrollment</label>
+            <input type="text" class="input1" placeholder="Name" name="pae"
+            maxlength="30" required><br>
+
+            <label class="label">Principal at time of Graduation</label>
+            <input type="text" class="input1" placeholder="Name" name="pag"
+            maxlength="30" required><br>
+
+            <label class="label">Famous teacher of your batch</label>
+            <input type="text" class="input1" placeholder="Name" name="ftib"
+            maxlength="30" required><br>
+
+            <label class="label">Summary of results</label>
+            <input type="text" class="input1" placeholder="Results" name="results" required><br>
+
+            <label class="label">Email</label>
+            <input type="email" class="input1" placeholder="Email" name="email" required><br>
+
+            <label class="label">Address</label>
+            <input type="text" class="input1" placeholder="Place, Region" name="address" required><br>
+
+            <label class="label">Contact</label>
+            <input type="tel" class="input1" placeholder="Phone number" name="contacts"
+            pattern="[0-9]{3}-[0-9]{9}" required><br>
+
+            <input type="submit" class="input1" id="submit"><br>
+            <br><br>
+            <a href="table.php">Press to export data</a>
+        </div>
+    </div>
+    
+</form>
+    
+</body>
+</html>
